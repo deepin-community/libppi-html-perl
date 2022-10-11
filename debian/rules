@@ -1,0 +1,17 @@
+#!/usr/bin/make -f
+
+PACKAGE = $(shell dh_listpackages)
+TMP     = $(CURDIR)/debian/$(PACKAGE)
+
+%:
+	dh $@
+
+override_dh_auto_test:
+	AUTOMATED_TESTING=1 dh_auto_test
+
+override_dh_installman:
+	dh_installman
+	mkdir $(TMP)/usr/share/man/man1
+	pod2man --release="Debian Project" --center="Debian GNU/Linux manual" \
+		--section=1 debian/ppi2html.pod \
+		$(TMP)/usr/share/man/man1/ppi2html.1

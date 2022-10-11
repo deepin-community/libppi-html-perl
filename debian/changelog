@@ -1,0 +1,132 @@
+libppi-html-perl (1.08-2.1) unstable; urgency=medium
+
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Tue, 29 Dec 2020 02:14:31 +0100
+
+libppi-html-perl (1.08-2) unstable; urgency=medium
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ Salvatore Bonaccorso ]
+  * debian/copyright: Replace DEP5 Format-Specification URL from
+    svn.debian.org to anonscm.debian.org URL.
+
+  [ gregor herrmann ]
+  * debian/control: update {versioned,alternative} (build) dependencies.
+
+  [ Salvatore Bonaccorso ]
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ gregor herrmann ]
+  * debian/watch: remove obsolete comment.
+
+  [ Axel Beckert ]
+  * debian/copyright: migrate pre-1.0 format to 1.0 using "cme fix dpkg-
+    copyright"
+
+  [ gregor herrmann ]
+  * Strip trailing slash from metacpan URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+  * Remove Jonathan Yu from Uploaders. Thanks for your work!
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ Florian Schlichting ]
+  * Mark package as source format 3.0 (quilt)
+  * Add spelling.patch and no-dot-in-inc.patch
+  * Update license paragraphs to commonly used versions
+  * Add myself to Uploaders
+  * Bump dh compat to level 11
+  * Declare compliance with Debian Policy 4.1.5
+
+ -- Florian Schlichting <fsfs@debian.org>  Sun, 08 Jul 2018 12:29:37 +0200
+
+libppi-html-perl (1.08-1) unstable; urgency=low
+
+  [ Jonathan Yu ]
+  * New upstream release
+  * Update to new short debhelper rules format
+  * Standards-Version 3.8.3 (drop perl version dep)
+
+  [ gregor herrmann ]
+  * debian/control: Changed: Switched Vcs-Browser field to ViewSVN
+    (source stanza).
+
+  [ Ryan Niebur ]
+  * Remove Florian Ragwitz from Uploaders (Closes: #523240)
+
+  [ Nathan Handler ]
+  * debian/watch: Update to ignore development releases.
+
+  [ gregor herrmann ]
+  * debian/control: remove versions from (build) dependencies on libppi-perl
+    and libcss-tiny-perl, even oldstable has newer versions.
+
+ -- Jonathan Yu <jawnsy@cpan.org>  Mon, 16 Nov 2009 21:02:31 -0500
+
+libppi-html-perl (1.07-2) unstable; urgency=low
+
+  [ gregor herrmann ]
+  * Take over for the Debian Perl Group with maintainer's permission
+    (http://lists.debian.org/debian-perl/2008/06/msg00039.html)
+  * debian/control: Added: Vcs-Svn field (source stanza); Vcs-Browser
+    field (source stanza); Homepage field (source stanza). Changed:
+    Maintainer set to Debian Perl Group <pkg-perl-
+    maintainers@lists.alioth.debian.org> (was: Florian Ragwitz
+    <rafl@debian.org>); Florian Ragwitz <rafl@debian.org> moved to
+    Uploaders.
+  * debian/watch: use dist-based URL.
+
+  [ Gunnar Wolf ]
+  * Fixed typo in short description (Closes: #467433)
+  * Updated standards-version to 3.8.0 (no changes needed)
+  * Updated debhelper compat level to 5
+  * Added myself as an uploader
+  * No longer ignores the result of 'make distclean'
+
+ -- Gunnar Wolf <gwolf@debian.org>  Tue, 01 Jul 2008 17:02:35 -0500
+
+libppi-html-perl (1.07-1.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Fix FTBFS with Perl 5.10.  Closes: #467991
+
+ -- Mark Hymers <mhy@debian.org>  Sat, 05 Apr 2008 21:09:15 +0100
+
+libppi-html-perl (1.07-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Florian Ragwitz <rafl@debian.org>  Thu,  3 Aug 2006 18:38:04 +0200
+
+libppi-html-perl (0.05-1) unstable; urgency=low
+
+  * New upstream release (Closes: #329649).
+  * New Maintainer with acknowledgement from the former one.
+  * Bumped up Standards-Version to 3.6.2 (no changes).
+  * Moved build-deps that aren't needed in the clean target to
+    build-dep-indep.
+  * Cleaned up debian/rules.
+  * Added libparams-util-perl to build-dep-indep and depends.
+  * Updated version numbers for all (build-)dependencies.
+  * Added dependency to libfile-slurp-perl because ppi2html needs it.
+  * Added a manpage for ppi2html and generate it from pod in debian/rules.
+
+ -- Florian Ragwitz <rafl@debian.org>  Sat, 11 Feb 2006 09:41:04 +0100
+
+libppi-html-perl (0.03-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Chip Salzenberg <chip@debian.org>  Thu,  7 Apr 2005 22:20:42 -0400

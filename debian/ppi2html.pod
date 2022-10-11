@@ -1,0 +1,27 @@
+=pod
+
+=head1 NAME
+
+ppi2html - generate syntax-hightlighted HTML for Perl using PPI
+
+=head1 SYNOPSIS
+
+B<ppi2html> I<input-file> [I<output-file>]
+
+=head1 DESCRIPTION
+
+Generate syntax-hightlighted HTML for Perl using PPI.
+
+I<input-file>
+
+Specifies the file to read the perl code from.
+
+I<output-file>
+
+Specifies the output file for the generated HTML. If none is given it appends '.html' to the input-file.
+
+=head1 AUTHOR
+
+This manpage was written by Florian Ragwitz E<lt>rafl@debian.orgE<gt> for the Debian GNU/Linux distribution, but may be used by others under the same terms as perl.
+
+=cut

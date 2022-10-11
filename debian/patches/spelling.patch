@@ -1,0 +1,15 @@
+Description: fix typo in POD
+Author: Florian Schlichting <fsfs@debian.org>
+Forwarded: https://rt.cpan.org/Ticket/Display.html?id=125787
+
+--- a/lib/PPI/HTML.pm
++++ b/lib/PPI/HTML.pm
+@@ -31,7 +31,7 @@
+ While early on it was thought that the same formatting code might be able
+ to be used for a variety of different types of things (ANSI and HTML for
+ example) later developments with the here-doc code and the need for
+-independantly written serializers meant that this idea had to be discarded.
++independently written serializers meant that this idea had to be discarded.
+ 
+ In addition, the old module only made use of the Tokenizer, and had a
+ pretty shit API to boot.
